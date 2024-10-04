@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    transform: scale(var(--scale));
+    overflow: hidden;
+
+    &.text-left {
+        text-align: left;
+        transform-origin: top left;
+    }
+
+    &.text-right {
+        text-align: right;
+        transform-origin: top right;
+    }
+
+    &.text-center {
+        text-align: center;
+        transform-origin: top center;
+    }
+
+    .date {
+        color: var(--color);
+        font-family: 'Square Sans Serif 7';
+        font-size: 30px;
+        line-height: 0.65em;
+        display: inline-block;
+        text-shadow: var(--text-shadow);
+        -webkit-user-select: none; /* Safari */
+        user-select: none; /* Standard syntax */
+        -webkit-app-region: drag;
+    }
+}
+
+@font-face {
+    font-family: 'Square Sans Serif 7';
+    src: url('/fonts/SquareSansSerif7.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

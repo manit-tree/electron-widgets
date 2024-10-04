@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+
+    svg {
+        fill: var(--color);        
+        -webkit-app-region: drag;
+    }
+}
